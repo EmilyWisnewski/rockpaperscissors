@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Emily Wisnewski">
+  <meta name="description" content="Rock Paper Scissors">
+  <title>Rock Paper Scissors COM329</title>
+  <link rel="stylesheet" href="mynormalize.css">
+  <link rel="stylesheet" href="mystyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+  <body onload="memory()">
+    <header>
+    </header>
+    <main>
+      <div id="intro">
+        <h1 id="title">Let's Play Rainbow Rock Paper Scissors!</h1>
+        <p id="instructions"> Click on the image you would like to play!</p>
+      </div>
+      <div id="game">
+        <div id="player">
+          <h2 id="playerLabel">Pick Below:</h2>
+          <div id="playerChoices">
+            <img src="img/rock.svg" alt="Rock" id="rock" onclick="game('rock')">
+            <img src="img/paper.svg" alt="Paper" id="paper" onclick="game('paper')">
+            <img src="img/scissors.svg" alt="Scissors" id="scissors" onclick="game('scissors')">
+          </div>
+        </div>
+        <div id="vsCont">
+          <p id="vs">V.S.</p>
+        </div>
+        <div id="opponent">
+          <h2 id="opponentLabel">Opponent's Choice</h2>
+          <div id="opponentChoiceCont">
+            <img src="img/questionMark.png" alt="The opponent's choice" id="opponentChoice">
+          </div>
+        </div>
+      </div>
+      <div id="scoreCont">
+        <h3 id="message">Look below to see your record!</h3>
+        <div id="score">
+          <div id="win">
+            <h2 id="winLabel">WINS</h2>
+            <p id="winNumber"></p>
+          </div>
+          <div id="tie">
+            <h2 id="tieLabel">TIES</h2>
+            <p id="tieNumber"></p>
+          </div>
+          <div id="lose">
+            <h2 id="loseLabel">LOSSES</h2>
+            <p id="loseNumber"></p>
+          </div>
+        </div>
+        <div id="resetCont">
+          <button type="reset" id="reset" onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+    </footer>
+    <script type="text/javascript" src="mytext.js"></script>
+  </body>
